@@ -1,4 +1,8 @@
-# AltairBot Science Bowl Bot
+# Join Our Discord Server
+
+Join our Discord server: [https://discord.gg/mZzr5TV9gk](https://discord.gg/mZzr5TV9gk) to ask questions, contribute, or use the bot without setting it up yourself!
+
+# Science Bowl Bot
 
 Science Bowl Bot is a Discord bot built with Python that helps users practice answering Science Bowl questions in a fun and competitive way. By using a collection of commands, teams can be formed and compete in answering tossup and bonus questions sourced from the [SciBowlDB API](https://scibowldb.com/about).
 
@@ -25,6 +29,13 @@ Science Bowl Bot is a Discord bot built with Python that helps users practice an
 ## How It Works
 
 The bot fetches Science Bowl questions from the [SciBowlDB API](https://scibowldb.com/about). It randomly selects questions based on category (excluding certain categories, like "COMPUTER SCIENCE") and handles parsing of both multiple-choice and short answer formats. When a question is posted, a timer is set using an asynchronous countdown which updates via an embedded message on Discord. Points are tracked per team and additional mechanics such as streak tracking are also implemented.
+
+## Flaws and Limitations
+
+- The bot's answer validation is rudimentary; it only checks if at least one word in your answer matches the correct answer.
+- For math questions, the method to determine the correct answer is particularly flawed.
+- The Discord bot isn't hosted on a server, so it must always be run on my personal laptop to keep it online.
+- Currently, the bot only pulls questions from the API database. There's potential for expansion (e.g., integrating a MongoDB database), but PDF parsing remains challenging.
 
 ## Installation
 
@@ -104,9 +115,6 @@ pip install discord.py python-dotenv requests nest_asyncio
 
 ## Credits
 
-- **Bot Creator:**  
-  Developed by Jonathan Rojas, leveraging his expertise in Python to create an engaging experience for Science Bowl enthusiasts.
-
 - **Question Source:**  
   This bot utilizes the [SciBowlDB API](https://scibowldb.com/about) to source high-quality, diverse Science Bowl questions. Please visit their website for more details.
 
@@ -120,6 +128,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For questions, feedback, or support, please contact [j6rojas@ucsd.edu](mailto:j6rojas@ucsd.edu).
+For questions, feedback, or support, please join the discord!.
 
 Enjoy practicing Science Bowl and good luck with your competitions!
