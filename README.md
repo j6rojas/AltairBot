@@ -34,7 +34,6 @@ The bot fetches Science Bowl questions from the [SciBowlDB API](https://scibowld
 
 - The bot's answer validation is rudimentary; it only checks if at least one word in your answer matches the correct answer.
 - For math questions, the method to determine the correct answer is particularly flawed.
-- The Discord bot isn't hosted on a server, so it must always be run on my personal laptop to keep it online.
 - Currently, the bot only pulls questions from the API database. There's potential for expansion (e.g., integrating a MongoDB database), but PDF parsing remains challenging.
 
 ## Installation
